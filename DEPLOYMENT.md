@@ -21,21 +21,21 @@ Panduan lengkap untuk deploy ChatBotKyy ke Vercel.
 
 ### 2. Setup Environment Variables
 
-Di Vercel Dashboard, tambahkan environment variables:
-
-```env
-NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key_here
-NEXT_PUBLIC_CLAUDE_API_KEY=your_claude_api_key_here
-```
+**PENTING:** Tambahkan environment variables di Vercel Dashboard sebelum deployment!
 
 **Cara menambahkan:**
 1. Buka project di Vercel Dashboard
 2. Go to Settings → Environment Variables
-3. Add variable:
+3. Add variable pertama:
    - Name: `NEXT_PUBLIC_GEMINI_API_KEY`
-   - Value: `your_actual_gemini_key`
+   - Value: `your_actual_gemini_api_key`
    - Environment: Production, Preview, Development
-4. Repeat for `NEXT_PUBLIC_CLAUDE_API_KEY`
+4. Add variable kedua:
+   - Name: `NEXT_PUBLIC_CLAUDE_API_KEY`
+   - Value: `your_actual_claude_api_key`
+   - Environment: Production, Preview, Development
+
+**Tanpa environment variables ini, aplikasi akan menggunakan respons default.**
 
 ### 3. Redeploy
 
