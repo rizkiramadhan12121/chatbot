@@ -4,7 +4,7 @@ Aplikasi chatbot sederhana dengan desain modern dan integrasi AI.
 
 ## Fitur Utama
 
-kyy
+ky
 
 - Chat dengan AI (Gemini & Claude)
 - Desain modern dengan tema gelap
